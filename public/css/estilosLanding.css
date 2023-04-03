@@ -1,0 +1,342 @@
+/**{
+    border: #686caa solid 1px;
+}*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navMenu{
+    padding:10px 60px;
+    box-shadow: 10px 10px 20px rgba(0, 0, .5)!important;
+    z-index: 100;
+}
+.nav-link{
+    color:#686caa;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus{
+    color:#f4b8c2; 
+    border-bottom: #f4b8c2 2px solid;  
+}
+
+img.imgLogo{
+    width: 90px;
+    padding: 10px 0 10px 10px;
+}
+
+label{
+    display: block;
+}
+
+.hamburger{
+    position:fixed;
+    background-color:transparent;
+    right:10;
+    top:0;
+    height:30px;
+    width:30px;
+    padding:20px 20px;
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index:1003;
+    cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+._layer{
+    background:#686caa;
+    margin-bottom:4px;
+    border-radius:2px;
+    width:28px;
+    height:4px;
+    opacity:1;
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+
+#menuH:checked ~ .hamburger .-top{
+    -webkit-transform:translateY(200%) rotate(45deg) !important;
+    -ms-transform:translateY(200%) rotate(45deg) !important;
+    transform:translateY(200%) rotate(45deg) !important;
+}
+#menuH:checked ~ .hamburger .-mid{
+    opacity:0;
+}
+#menuH:checked ~ .hamburger  .-bottom{
+    -webkit-transform:translateY(-200%) rotate(135deg) !important;
+    -ms-transform:translateY(-200%) rotate(135deg) !important;
+    transform:translateY(-200%) rotate(135deg) !important;
+}
+
+#menuH:checked ~ .menuppal{
+    transform: translate3d(0px, 0px, 0px);
+}
+ul {
+    list-style: none;
+}
+.menuppal{
+    text-align: center;
+    background: white;
+    bottom: 0;
+    height: 120px;
+    right: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 30px;
+    transform: translate3d(0px, -450%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 40%;
+    z-index: 1001;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.menuppal{
+margin-right:60px;
+}
+.menuppal:after {
+    position: absolute;
+    top: 2px;
+    right: -10px;
+    content: "";
+    display: block;
+    border-left: 20px solid black;
+    border-right: 15px solid black;
+    border-bottom: 15px solid black;
+    z-index: 1002;
+
+  }
+
+  /*---- ESTILOS SECCION NOSOTROS ------*/
+.nosotros{
+    background-image:url("/img/backmorado.svg")!important;
+    height: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.titulos{
+    color: #fff;
+    padding-left: 3px;
+    border: 0 0 2px 0 solid #fff;
+}
+.textos{
+    color:#fff;
+}
+
+.textKeyword{
+    font-weight: 600!important;
+}
+
+
+
+/*ESTILOS PARA VALORES*/
+.cardValores{
+    box-shadow: 5px 5px 5px rgba(00, 00, 00, .3);
+}
+.imgValores{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+   
+}
+.textValores{
+    color:#686caa;
+}
+/*Styling scrollable elements*/
+
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
+
+
+  /* Animaciones cards*/
+
+  /* fade in right*/
+  .scrolled.fade-in-right {
+	-webkit-animation: fade-in-right 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-right 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes fade-in-right {
+    0% {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-right {
+    0% {
+      -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+            opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+    }
+  }
+
+  /* fade in left*/
+  .scrolled.fade-in-left {
+	-webkit-animation: fade-in-left 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-left 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+  /* fade in bottom*/ 
+  .scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1.5s ease-in-out both;
+  }
+
+  @keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+/* ---- Animaciones titulos cards -----*/
+
+.text-blur-out {
+	-webkit-animation: text-blur-out 4.7s ease-in alternate-reverse backwards;
+	        animation: text-blur-out 4.7s ease-in alternate-reverse backwards;
+}
+
+
+@-webkit-keyframes text-blur-out {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+  @keyframes text-blur-out {
+    0% {
+      -webkit-filter: blur(0.01);
+              filter: blur(0.01);
+    }
+    100% {
+      -webkit-filter: blur(12px) opacity(0%);
+              filter: blur(12px) opacity(0%);
+    }
+  }
+
+  /* ------ Estilos seccion CENDI ------ */
+  .cendi{
+    background-image:url("/img/ba-rosacompleto.svg")!important;
+    width: 100% auto;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .h1cendi{
+    color: #686caa;
+    font-size: 1.6em;
+  }
+
+  .imgCendi{
+    width: 100%;
+  }
+  .bordemoradoA{
+    border: #686caa solid 4px; 
+  }
+  .borderRosa{
+    border:#f4b8c2 solid 4px;
+  }
+
+   /* ------ Estilos seccion CENDI ------ */
+   .lupita{
+    background-image:url("/img/bgMoradoCompleto.svg")!important;
+    width: 100% auto;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+  footer{
+    background-image:url("/img/footer.svg")!important;
+    width: 100% auto;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .labelEmail{
+    padding: 7px;
+    border: none;
+  }
+
+  .labelEmail:hover,
+  .labelEmail:active,
+  .labelEmail:focus  {
+background-color: rgba(255, 255, 255, 0.7);
+border: none;
+  }
+
+  input.labelEmail:focus{
+    border:none!important;
+  }
+  input.labelEmail:focus::-moz-placeholder {
+    color: #bbb5af;
+  }
+  .btnEnviar{
+    background-color: #f4b8c2;
+    color:#686caa;
+    padding: 7px;
+  }
