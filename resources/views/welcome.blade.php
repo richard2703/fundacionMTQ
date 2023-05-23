@@ -11,6 +11,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Solitreo&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -25,291 +28,410 @@
     </head>
     <body class="container-fluid g-0">
                     
-        <header class="row ">
+        <header class="row d-flex ">
+
             <nav class="navbar navMenu">
-                <div class="col contLogo ms-5">
+                <div class="col-1">
                   <a class="" href="#">
                     <img src="/img/logoslogan.svg" class="imgLogo" alt="Fundación MTQ" >
                   </a>
                 </div>
                 <!--Menú para pantallas grandes-->
-                <div class="col d-none d-lg-block " >
-
-                    <ul class=" nav justify-content-end">
-                        
+                <div class="col-11 d-none d-md-block " >
+                    <ul class=" nav justify-content-end"> 
                         <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Nosotros</a>
+                            <a class="nav-link linkMenu" aria-current="page" href="#somos">¿Quiénes Somos?</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Valores</a>
+                            <a class="nav-link linkMenu" href="#valores">Nuestros Valores</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Acciones</a>
+                            <a class="nav-link linkMenu" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link ">Contacto</a>
+                            <a class="nav-link linkMenu" href="#ayudar">Quiero ayudar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkMenu" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
             
-                  <!--Menú para pantallas chicas-->
-                  
-                <div class="d-block d-lg-none contHamb">
+                <!--Menú para pantallas chicas-->  
+                <div class="d-block d-md-none me-5">
                     <input type="checkbox" id="menuH" style="display: none;" />
                     <div class="hamburger">
                         <label for="menuH"class="_layer -top"></label>
                         <label for="menuH" class="_layer -mid"></label>
                         <label for="menuH" class="_layer -bottom"></label>
                     </div>
-                    <div class="menuppal">
-                        <ul><li class="nav-item"> <i class="bi bi-arrow-bar-right"></i></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Valores</a></li>
-                            <li><a href="#">Acciones</a></li>
-                            <li><a href="#">Contacto</a></li>
+                    <div class="menuppal text">
+                        <ul><li class="nav-item text-end"> 
+                            <li><a href="#somos" class="menuHamburgesa">¿Quiénes Somos?</a></li>
+                            <li><a href="#valores"class="menuHamburgesa">Nuestros Valores</a></li>
+                            <li><a href="#proyectos"class="menuHamburgesa">Proyectos</a></li>
+                            <li><a href="#ayudar"class="menuHamburgesa">Quiero ayudar</a></li>
+                            <li><a href="#contacto"class="menuHamburgesa">Contacto</a></li>
                         </ul>
                     </div>
-                     </nav>  
                 </div>
+            </nav>  
+                
         </header>
-           
-            <section id="carouselExampleAutoplaying " class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active ">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade g-0">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
                     <img src="/img/banner1.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item ">
-                    <img src="/img/banner2.jpg" class="d-block w-100 " alt="...">
-                  </div>
-                  <div class="carousel-item ">
-                    <img src="/img/banner3.jpg" class="d-block w-100 " alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-            </section>
-
-            <section class="row nosotros justify-content-center py-5">
-                <div class="col-10  my-4">
-                    <!--<img src="/img/logobco.svg" class="imgLogo mx-auto d-block" alt="Fundación MTQ" >
-                    <h2 class="titulos mt-5 mb-3 border-start">El Ser y el Hacer</h2>-->
-                   <div class="row">
-                    <div class="col-12">
-                        <h2 class="titulos mt-5 mb-3 border-start">El Ser y el Hacer</h2>
-                    </div>
-                    <div class="col-11  col-md-6 ">
-                        <p class="textos ">
-                        Una fundación concebida a partir del valor humano de hacer el bien, ha dirigido sus esfuerzos
-                        hacia personas con estado de vulnerabilidad, ya sea por su condición social, capacidades diferentes, nivel económico, estado de salud 
-                        físico o psíquico, o una combinación de éstos y sin importar su sexo, edad, etnia o estado civil; con el propósito de mejorar su 
-                        condición y que puedan aspirar a una situación de bienestar y una mejor calidad de vida.                    
-                        </p></br>
-                        <p class="textos">
-                            Para cumplir con su inmutable objetivo <srtong class="textKeyword">Fundación MTQ</srtong> pone a su disposición  su capacidad técnica y financiera,
-                            infraestructura para la vivienda, mantenimiento o mejora, alimentación, vestimenta, educación, atención médica, psicológica, 
-                            asesoría legal y orientación para su reinserción social.
-                        </P></br>               
                         
+                </div>
+                <div class="carousel-item">
+                <img src="/img/banner2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="/img/banner3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+            
+        <section class="row d-flex quienesSomos my-4" id="somos">
+            <div class="col-12  mb-5 scroll-container">
+                <div class="cont-titulo mx-auto d-block scroll-element js-scroll fade-in-top">
+                    <h2 class="tituloUno">¿Quiénes</br><span> Somos?</span></br>
+                    <img src="/img/rallitaRosa.svg" class="rallita" alt="Rallita"></h2>
+                </div>
+            </div>
+
+            </div>
+            <div class="col-12">
+                <div class="row justify-content-around mx-3">
+                    <div class="col-12 col-md-4 my-3 scroll-element js-scroll fade-in-left">
+                        <img src="/img/quienesSomos2.jpg" width="100%" class="bordeMorado" alt="...">
                     </div>
-                    <div class="col-11  col-md-6">
-                        <p class="textos">
-                            En lo referente al plano legal, la asociación civil podrá celebrar todos los actos consernientes a contratos y operaciones
-                            administrativas, civiles o mercantiles que sean necesarias o convenientes; así como realizar las funciones establecidas por la ley en la materia.
+                    <div class="col-12 col-md-4 my-3 scroll-element js-scroll fade-in-bottom">
+                        <img src="/img/quienesSomos1.jpg" width="100%" class="bordeRosa" alt="...">
+                    </div>
+                    <div class="col-12 col-md-4 mt-3 scroll-element js-scroll fade-in-right">
+                        <img src="/img/quienesSomos3.jpg" width="100%" class="bordeMorado" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center mt-5 mb-4 my-3 scroll-container">
+                <div class="scroll-element js-scroll fade-in-top">
+                    <img src="/img/logoFundacionGris.svg"  class="logoGris" alt="...">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 offset-md-3 my-2 scroll-container">
+                <div class="">
+                    <p class="text-center">
+                        ­Desde nuestros inicios en el año 2011, Fundación MTQ 
+                        ha causado un gran impacto en la vida de muchas familias Jaliscienses, 
+                        hemos dirigido nuestros esfuerzos hacia personas en estado de
+                        vulnerabilidad, ya sea por su condición social, tipo de discapacidades,
+                        nivel económico, estado de salud físico o psicológico o una combinación
+                        de éstos, con el propósito de mejorar su calidad de vida. </br></br>
+
+                        La base de nuestro trabajo reside en hacer el bien y en la dedicación
+                        continua que aportamos a la variedad de causas en las que participamos. 
+                    </p>   
+                </div>
+                <div class="mx-auto d-block my-5 scroll-element js-scroll fade-in-top">
+                    <img src="/img/logoTransparencia.svg"  class="mx-auto d-block logoGris" alt="...">
+                    <P class="col-8 col-md-5 mx-auto my-4 d-block textInstitucionalidad">Recibimos la Acreditación
+                        en Institucionalidad y
+                        Transparencia</P>
+                </div>
+            </div>
+        </section>
+
+        <section class="row d-flex justify-content-center valores" id="valores">
+            <div class="col-11  my-4 scroll-container">
+                <div class="cont-titulo scroll-element js-scroll fade-in-top">
+                    <h2 class="tituloUnoBlanco ">Nuestros</br><span> Valores</span></br>
+                    <img src="/img/rallitaRosa.svg" class="rallita" alt="Rallita"></h2>
+                </div>
+            </div>
+            <div class="col-11">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <nav>
+                            <div class="nav nav-tabs contValores" id="nav-tab" role="tablist">
+                              <button class="nav-link btnValores active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Visión</button>
+                              <button class="nav-link btnValores" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Misión</button>
+                              <button class="nav-link btnValores" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Valores</button>
+                            </div>
+                          </nav>
+                    </div>
+                    <div class="col-12 col-md-8 tab-content mb-5 " id="nav-tabContent">
+                            <div class="row flex-nowrap tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                <div class="card mb-3" >
+                                    <div class="row justify-content-center g-0">
+                                      <div class="col-6 col-md-4">
+                                        <img src="/img/vision.svg" class="img-fluid" alt="vision">
+                                        
+                                      </div>
+                                      <div class="col-12 col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title titleValores">Visión</h5>
+                                          <p class="card-text">Ser la asociación civil líder en otorgar las soluciones optimas e innovadoras acorde a las necesidades especificas de cada una de las causas que nos comprometemos, sustentada por un modelo de procuración autosuficiente y transparente que asegure el futuro de nuestros proyectos. Con esto consolidarnos como la primera opción viable y confiable para quienes buscan apoyar a las personas vulnerables.</p>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="row  tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                <div class="card mb-3" >
+                                    <div class="row justify-content-center g-0">
+                                      <div class="col-6 col-md-4">
+                                        <img src="/img/mision.svg" class="img-fluid" alt="vision">
+                                        
+                                      </div>
+                                      <div class="col-12 col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title titleValores">Misión</h5>
+                                          <p class="card-text">Desarrollar, promover e impulsar todas las actividades para la integración de personas en estado de vulnerabilidad, con el fin de mejorar su calidad de vida.
+                                            </p>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="row  tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                                <div class="card mb-3" >
+                                    <div class="row justify-content-center g-0">
+                                      <div class="col-6 col-md-4">
+                                        <img src="/img/valores.svg" class="img-fluid" alt="vision">
+                                        
+                                      </div>
+                                      <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title titleValores">Valores</h5>
+                                          <p class="card-text">
+                                            Igualdad</br>
+                                            Empatía</br>
+                                            Compromiso</br>
+                                            Cooperación </br>
+                                            Confianza
+                                            </p>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="m-0 p-0">
+                <img src="/img/ondasRosas.png" width="100%"  alt="ondas">
+            </div>
+        </section>
+
+        <section class="row justify-content-center proyectos" id="proyectos">
+            <div class="col-11  mb-5 scroll-container">
+                <div class="cont-titulo scroll-element js-scroll fade-in-top">
+                    <h2 class="tituloDos "></br><span>Proyectos</span></br>
+                    <img src="/img/rallitaRosa.svg" class="rallita" alt="Rallita"></h2>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="col-12 col-md-8 col-lg-4 my-4 scroll-element js-scroll fade-in-left">
+                        <div class="contentA mx-auto d-block ">
+                            <div class="content">
+                                <div class="contenTImagenMorado">
+                                    <img src="/img/educacion.jpg" class="imgProyectos" alt="Educacion">
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="subProyectos mt-3 text-center">Educación</h4>
+                        <p>A través de nuestro programa de educación, tenemos la posibilidad de hacer cambios 
+                            reales y positivos en la vida de muchos pequeños.</br> </br>
+                            Esta es una de las áreas clave de atención en Fundación MTQ y 
+                            un motivo de gran éxito para nuestra asociación.
                         </p>
                     </div>
-                   </div> 
-                </div>                
-            </section>
-
-            <section class="row justify-content-center py-5">
-                <div class="col-10 my-5">
-                    <div class="row justify-content-center g-4 my-5">
-                        <div class="col-12 col-md-4 my-5 scroll-container">
-                            <div class="card h-100 cardValores scroll-element js-scroll fade-in-left">
-                                <img src="/img/misionMorado.svg" class="imgValores" alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title text-center textValores text-blur-out">MISIÓN</h5>
-                                <p class="card-text text-center">
-                                    Desarrollar, promover e impulsar todas las actividades para 
-                                    la integración de personas vulnerables con el fin de mejorar su calidad de vida.</p>
+                    <div class="col-12 col-md-8 col-lg-4 my-4 scroll-element js-scroll fade-in-bottom">
+                        <div class="contentB mx-auto d-block">
+                            <div class="content">
+                                <div class="contenTImagenRosa">
+                                    <img src="/img/salud.jpg" class="imgProyectos" alt="Salud">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 scroll-container my-5">
-                            <div class="card h-100 cardValores scroll-element js-scroll fade-in-bottom">
-                                <img src="/img/visionMorado.svg" class="imgValores " alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title text-center textValores text-blur-out">VISIÓN</h5>
-                                <p class="card-text text-center">
-                                    Ser una de las mejores asociaciones civiles en Jalisco, que otorgue herramientas 
-                                    a todas aquellas personas 
-                                    con vulnerabilidad para así ayudarles a integrarse a la sociedad.</p>
+                        <h4 class="subProyectos mt-3 text-center">Salud</h4>
+                        <p>
+                            Sabemos que la salud es fundamental para el bienestar de las personas y para 
+                            el desarrollo de la sociedad, nuestro enfoque es ayudar a las personas en situación 
+                            de vulnerabilidad, brindándoles apoyo en los servicios médicos, medicinas y estudios que necesiten.
+                        </p>   
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-4 my-4 scroll-element js-scroll fade-in-right">
+                        <div class="contentA mx-auto d-block">
+                            <div class="content">
+                                <div class="contenTImagenMorado">
+                                    <img src="/img/apoyo.jpg" class="imgProyectos" alt="Apoyo Humanitario">
                                 </div>
-                            </div>
+                            </div>    
                         </div>
-                        <div class="col-12 col-md-4 scroll-container my-5">
-                            <div class="card h-100 cardValores scroll-element js-scroll fade-in-right">
-                                <img src="/img/objetivoMorado.svg" class="imgValores" alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title text-center textValores text-blur-out">OBJETIVO ESPECÍFICO</h5>
-                                <p class="card-text text-center">
-                                    Lograr que la sociedad conozca y valore las necesidades de los 
-                                    diferentes proyectos de cada una de las personas que solicitan 
-                                    el apoyo a la fundación y que esto permita poder integrarlos 
-                                    a la sociedad y darles una mejor calidad de vida.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--<div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title text-center">Card title</h5>
-                            <p class="card-text text-center">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>-->
-                        </div>
+                        <h4 class="subProyectos mt-3 text-center">Apoyo Humanitario</h4>
+                        <p>Sabemos que la salud es fundamental para el bienestar de las personas 
+                            y para el desarrollo de la sociedad, nuestro enfoque es ayudar a las 
+                            personas en situación de vulnerabilidad, brindándoles apoyo en los 
+                            servicios médicos, medicinas y estudios que necesiten.
+                        </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+            <div class="m-0 p-0">
+                <img src="/img/ondas.jpg" width="100%"  alt="ondas">
+            </div>
 
+        <section class="row justify-content-center quienesSomos my-4">
+            <div class="col-11  mb-5 scroll-container" id="ayudar">
+                <div class="cont-titulo scroll-element js-scroll fade-in-top">
+                    <h2 class="tituloUno ">Quiero</br><span> Ayudar</span></br>
+                    <img src="/img/rallitaRosa.svg" class="rallita" alt="Rallita"></h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-11 ">
 
-            <section class="row  cendi justify-content-center py-5 scroll-container">
-                <div class="col-10  my-5">
-                    <div class="row justify-content-between">
-                        <div class="col-12">
-                            <h1 class="h1cendi scroll-element js-scroll fade-in-left">Centro de Estimulación  para Personas </br>con
-                                Discapacidad Intelectual </br>
-                                <img src="/img/rallita.svg" width="80px;" class="mb-5" alt="...">
-                            </h1>
+                    <div class="row scroll-container">
+                        <div class="col-10 col-md-4 col-lg-3 my-4 scroll-element js-scroll fade-in-left">
+                            <img src="/img/especie.png" width="85%" class="mx-auto d-block imgAyudar" alt="icono especie">
                         </div>
-                        <div class="col-6 pe-4 my-5">
+                        <div class="col-12 col-md-8 col-lg-9 my-4 scroll-element js-scroll fade-in-right">
+                            <h4 class="subProyectos mt-3">¡Las donaciones en especie son una forma valiosa de apoyar!</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Nulla fringilla accumsan sem, in luctus enim ultricies a. 
-                                Praesent blandit tortor id justo auctor, quis pulvinar orci feugiat. 
-                                Ut tincidunt bibendum congue. </br></br>
-                                
-                                Aliquam condimentum tortor diam, 
-                                in vestibulum est consectetur ut. Vivamus tempor mauris in auctor aliquam. 
-                                Phasellus quis congue mauris, vel aliquet massa. Nunc porta, lorem id 
-                                pretium finibus, mauris magna vulputate nulla, et facilisis tellus odio vel neque. 
+                                1.	Alimentos y artículos de higiene personal: Las donaciones de alimentos no perecederos y artículos de higiene personal, como jabón, pasta dental, papel higiénico y otros, son muy útiles. Estas donaciones ayudarán a satisfacer las necesidades básicas y mejorar la calidad de vida de las personas necesitadas.</br></br>
+                                2.	Ropa y calzado: Las donaciones de ropa y calzado ayudarán a las personas que viven en situaciones de emergencia, como víctimas de desastres naturales y para personas sin hogar o en situación de pobreza.
                             </p>
                         </div>
-
-                        <div class="col-6 ps-4 my-5"> 
-                            <img src="/img/cendi1.jpg" width="90%" class="imgCendi float-end bordemoradoA scroll-element js-scroll fade-in-right" alt="...">    
+                        <div class="col-10 col-md-4 col-lg-3 my-4 scroll-element js-scroll fade-in-left">
+                            <img src="/img/dinero.png" width="85%" class="mx-auto d-block" alt="icono especie">
                         </div>
-                        <div class="col-6 pe-4">
-                            <img src="/img/cendi2.jpg" width="100%" class=" my-5 borderRosa scroll-element js-scroll fade-in-left" alt="...">
-                            <img src="/img/cendi6.jpg" width="90%" class=" my-5 bordemoradoA float-end scroll-element js-scroll fade-in-left" alt="...">
-                            <img src="/img/cendi5.jpg" width="80%" class="my-5 borderRosa float-end scroll-element js-scroll fade-in-left" alt="...">
-                        </div>
-
-                        <div class="col-6 ps-4 my-5">
-                            <img src="/img/cendi3.jpg" width="90%" class="my-5 bordemoradoA scroll-element js-scroll fade-in-right" alt="...">
-                            <img src="/img/cendi4.jpg" width="100%" class="my-5 borderRosa scroll-element js-scroll fade-in-right" alt="...">
+                        <div class="col-12 col-md-8 col-lg-9 my-4 scroll-element js-scroll fade-in-right">
+                            <h4 class="subProyectos mt-3">¡Utilizamos los fondos de manera responsable y transparente!</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Nulla fringilla accumsan sem, in luctus enim ultricies a. 
-                                Praesent blandit tortor id justo auctor, quis pulvinar orci feugiat. 
-                                Ut tincidunt bibendum congue. </br></br>
-                                
-                                Aliquam condimentum tortor diam, 
-                                in vestibulum est consectetur ut. Vivamus tempor mauris in auctor aliquam. 
-                                Phasellus quis congue mauris, vel aliquet massa. Nunc porta, lorem id 
-                                pretium finibus, mauris magna vulputate nulla, et facilisis tellus odio vel neque. 
+                                Las donaciones económicas nos brindan la flexibilidad para utilizar los fondos en las áreas más necesitadas y responder a las emergencias y crisis de manera más efectiva.</br></br>
+
+                                Cuenta: 0100 5888433</br>
+                                Clabe: 044320010058884331</br>
+                                Scotiabank
+
+                            </p>
+                        </div>
+                        <div class="col-10 col-md-4 col-lg-3 my-4 scroll-element js-scroll fade-in-left">
+                            <img src="/img/alianza.png" width="85%" class="mx-auto d-block" alt="icono especie">
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-9 my-4 scroll-element js-scroll fade-in-right">
+                            <h4 class="subProyectos mt-3">¡Tu empresa puede ser parte del cambio!</h4>
+                            <p>
+                                Buscamos aliados que compartan los valores y misión de Fundación MTQ 
+                                y estén dispuestos a contribuir positivamente con la comunidad. </br></br>
+                                El trabajar en equipo con aliados estratégicos, nos permite potencializar 
+                                nuestros programas sociales para llegar más rápido a las metas establecidas.
                             </p>
                         </div>
                     </div>
-
                 </div>
-            </section>
-            <section class="row  lupita justify-content-center py-5 scroll-container">
-                <div class="col-10  my-5">
-                    <div class="row justify-content-between align-items-end">
-                        <!--<div class="col-12">
-                            <h1 class="h1cendi scroll-element js-scroll fade-in-left">Centro de Estimulación  para Personas </br>con
-                                Discapacidad Intelectual </br>
-                                <img src="/img/rallita.svg" width="80px;" class="mb-5" alt="...">
-                            </h1>
-                        </div>-->
-                        <div class="col-4 pe-4 my-5">
-                            <h1 class="h1cendi text-end scroll-element js-scroll fade-in-left">Lupita </br>
-                                <img src="/img/rallita.svg" width="80px;" class="mb-2" alt="...">
-                            </h1>
-                            <p class="text-end">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Nulla fringilla accumsan sem, in luctus enim ultricies a. 
-                                Praesent blandit tortor id justo auctor, quis pulvinar orci feugiat. 
-                                Ut tincidunt bibendum congue.
-   
-                            </p>
-                        </div>
-                        <div class="col-8 ps-4 my-5"> 
-                                <video width="100%"  autoplay muted loop playsinline>
-                                <source src="/videos/lupita2.mp4" type="video/mp4">      
-                              </video>
-                        </div>
-                        <div class="col-4 ps-4 my-5">
-                            <img src="/img/lupita2.jpg" width="100%" class="my-3 bordemoradoA scroll-element js-scroll fade-in-right" alt="...">
-                        </div>
-                        <div class="col-4 ps-4 my-5">
-                            <img src="/img/lupita1.jpg" width="100%" class="my-3 bordemoradoA scroll-element js-scroll fade-in-right" alt="...">
-                        </div>
-                        <div class="col-4 ps-4 my-5">
-                            <p class="text-end">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Nulla fringilla accumsan sem, in luctus enim ultricies a. 
-                                Praesent blandit tortor id justo auctor, quis pulvinar orci feugiat. 
-                                Ut tincidunt bibendum congue.
-   
-                            </p>
-                        </div>
+
+            </div>
+        </section>
+        <div class="">
+            <img src="/img/footer.jpg" width="100%" class=" g-0" alt="ondas moradas">
+        </div>
+        <footer class="row justify-content-center pie pb-4 scroll-container" id="contacto">
+            <div class="">
+                <h2 class="tituloFooter scroll-element js-scroll fade-in-top">
+                    Súmate a ayudar
+                </h2>
+            </div>
+            <div class="col-10 col-md-6 mb-5 scroll-element js-scroll fade-in-top">
+                <form> 
+                    <div class="row mb-3">
+                      <label for="inputPassword3" class="col-4 col-sm-2 col-form-label">Nombre</label>
+                      <div class="col-8 col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3">
+                      </div>
                     </div>
-
-                </div>
-
-            </section>
-            <footer class="row justify-content-center">  
-                <div class="col-12 py-5">
-                    <img src="/img/logobco.svg" width="100px" class="my-3 mx-auto d-flex " alt="...">
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-4 col-sm-2 col-form-label">Email</label>
+                        <div class="col-8 col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail3">
+                        </div>
+                      </div>
                     
-                    <form class="row mb-3 justify-content-center">
-                        <div class="col-4 ">
-                            <label for="inputEmail3" class=" ">Email</label>
-                            <input type="email" class="form-control" id="">
-                            <button type="submit" class="btn btnEnviar">Enviar</button>
-                        </div> 
-                    </form>
+                    <button type="submit" class="btn btn-primary btnAyudar float-end">Quiero ayudar</button>
+                  </form>
+            </div>
+            <div class="col-11 mt-5">
+                <div class="row justify-content-center">
 
+                    <div class="col-9 col-md-1 my-4">
+                        <img src="/img/logoBlanco.svg" width="70%" class="logoBlanco" alt="logo fundación MTQ blanco">
+                    </div>
+                    <div class="col-9 col-md-3 mt-0">
+                        <nav class="mt-0 ">
+                            
+                                <a href="#somos" class="menuFooter"><p>¿Quiénes Somos?</p></a>
+                                <a href="#valores" class="menuFooter"><p>Nuestros Valores</p></a>
+                                <a href="#proyectos" class="menuFooter"><p>Proyectos</p></a>
+                                <a href="#ayudar" class="menuFooter"><p>Quiero Ayudar</p></a>
+                                <a href="#contacto" class="menuFooter"><p>Contacto</p></a>
+                            
+                        </nav>
+                        
+                    </div>
+                    <div class="col-md-5 mt-4">
+                        <h5>Contacto</h5>
+                        <div class="row d-flex">
+                            <div class="col-3 col-lg-2"> 
+                                <img src="/img/casa.svg"  class="m-0 p-0 float-end imgDireccion" alt="casa"> 
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <p>José María Heredia 2405</br>
+                                    Lomas de Guevara</br>
+                                    C.P. 44657</br>
+                                    Guadalajara, Jalisco
+                                </p>
+                            </div>
+                            <div class="col-3 col-lg-2"> 
+                                <img src="/img/diadema.svg" width="40%" class="m-0 p-0 float-end" alt="casa"> 
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <P>33 3630 6028 ext. 6105</P>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-11 col-md-3  mt-4">
+                        <a href="#"><img src="/img/facebook.svg" width="10%" class="float-end mx-2" alt="ondas moradas"></a>
+                        <a href="#"><img src="/img/instagram.svg" width="10%" class="float-end mx-2"  alt="ondas moradas"></a>
+                        <a href="#"><img src="/img/twitter.svg" width="10%" class="float-end mx-2"  alt="ondas moradas"></a></br></br>
+                        <p class="text-end">Fundación MTQ 2023</br>
+                            Todos los derechos reservados</P>    
+                    </div>
                 </div>
+            </div>
+              
 
-
-            </footer>
-           
-            
-
-
-
+        </footer>
+    
 
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
-
-
-
-
-
-       
     
 <!--Script adicionales-->
 <script>
