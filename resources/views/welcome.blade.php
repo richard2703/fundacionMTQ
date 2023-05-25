@@ -27,8 +27,8 @@
     </style>
 
     <!--Style CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/public/css/reset.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('/public/css/estilosLanding.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/estilosLanding.css') }}" />
 
 
 </head>
