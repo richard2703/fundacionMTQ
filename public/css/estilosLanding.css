@@ -1,6 +1,6 @@
-/**{
+*, div{
     border: #686caa solid 1px;
-}*/
+}
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -19,7 +19,6 @@ body{
 .nav-link:active,
 .nav-link:focus{
     color:#f4b8c2; 
-    border-bottom: #f4b8c2 2px solid;  
 }
 
 img.imgLogo{
@@ -171,7 +170,7 @@ padding: -10;
       font-size: 2.em;
     }
     .logoGris{
-      width: 30%;
+      width: 22%;
     } 
 }
 
@@ -438,6 +437,7 @@ padding: 1px;
   color: #fff;
 }
 .tituloFooter{
+  font-size: 2em;
   font-family: 'Solitreo', cursive;
   text-align: center;
   color: #fff;
@@ -455,7 +455,7 @@ padding: 1px;
 }
 .imgDireccion{
   color: #fff;
-  width: 40%;
+  width: 30%;
 }
 @media screen and (max-width: 767px){
   .logoBlanco{
