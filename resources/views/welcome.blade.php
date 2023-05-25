@@ -21,6 +21,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Solitreo&display=swap"
         rel="stylesheet">
 
+
+
+
     <!-- Styles -->
     <style>
 
@@ -46,19 +49,19 @@
             <!--Menú para pantallas grandes-->
             <div class="col-11 d-none d-md-block ">
                 <ul class=" nav justify-content-end">
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link linkMenu" aria-current="page" href="#somos">¿Quiénes Somos?</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link linkMenu" href="#valores">Nuestros Valores</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link linkMenu" href="#proyectos">Proyectos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link linkMenu" href="#ayudar">Quiero ayudar</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link linkMenu" href="#contacto">Contacto</a>
                     </li>
                 </ul>
@@ -87,27 +90,29 @@
 
     </header>
     <div id="carouselExampleFade" class="carousel slide carousel-fade g-0">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/img/banner1.jpg" class="d-block w-100" alt="...">
+        <h1>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/banner1.jpg" class="d-block w-100" alt="...">
 
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/banner2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/banner3.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="/img/banner2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="/img/banner3.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </h1>
     </div>
 
     <section class="row d-flex quienesSomos my-4" id="somos">
@@ -123,19 +128,19 @@
         <div class="col-12">
             <div class="row justify-content-around mx-3">
                 <div class="col-12 col-md-4 my-3 scroll-element js-scroll fade-in-left">
-                    <img src="/img/quienesSomos2.jpg" width="100%" class="bordeMorado" alt="...">
+                    <img src="/img/quienesSomos2.jpg" width="100%" class="bordeMorado" alt="Quienes Somos 1">
                 </div>
                 <div class="col-12 col-md-4 my-3 scroll-element js-scroll fade-in-bottom">
-                    <img src="/img/quienesSomos1.jpg" width="100%" class="bordeRosa" alt="...">
+                    <img src="/img/quienesSomos1.jpg" width="100%" class="bordeRosa" alt="Quienes Somos 2">
                 </div>
                 <div class="col-12 col-md-4 mt-3 scroll-element js-scroll fade-in-right">
-                    <img src="/img/quienesSomos3.jpg" width="100%" class="bordeMorado" alt="...">
+                    <img src="/img/quienesSomos3.jpg" width="100%" class="bordeMorado" alt="Quienes Somos 3">
                 </div>
             </div>
         </div>
         <div class="col-12 text-center mt-5 mb-4 my-3 scroll-container">
             <div class="scroll-element js-scroll fade-in-top">
-                <img src="/img/logoFundacionGris.svg" class="logoGris" alt="...">
+                <img src="/img/logoFundacionGris.svg" class="logoGris" alt="LOgo findación gris">
             </div>
         </div>
         <div class="col-12 col-md-6 offset-md-3 my-2 scroll-container">
@@ -153,7 +158,7 @@
                 </p>
             </div>
             <div class="mx-auto d-block my-5 scroll-element js-scroll fade-in-top">
-                <img src="/img/logoTransparencia.svg" class="mx-auto d-block logoGris" alt="...">
+                <img src="/img/logoTransparencia.svg" class="mx-auto d-block logoGris" alt="Logo Transparencia">
                 <P class="col-8 col-md-5 mx-auto my-4 d-block textInstitucionalidad">Recibimos la Acreditación
                     en Institucionalidad y
                     Transparencia</P>
@@ -215,7 +220,7 @@
                         <div class="card mb-3">
                             <div class="row justify-content-center g-0">
                                 <div class="col-6 col-md-4">
-                                    <img src="/img/mision.svg" class="img-fluid" alt="vision">
+                                    <img src="/img/mision.svg" class="img-fluid" alt="Mision">
 
                                 </div>
                                 <div class="col-12 col-md-8">
@@ -236,7 +241,7 @@
                         <div class="card mb-3">
                             <div class="row justify-content-center g-0">
                                 <div class="col-6 col-md-4">
-                                    <img src="/img/valores.svg" class="img-fluid" alt="vision">
+                                    <img src="/img/valores.svg" class="img-fluid" alt="valores">
 
                                 </div>
                                 <div class="col-md-8">
@@ -328,7 +333,7 @@
         <div class="col-11  mb-5 scroll-container" id="ayudar">
             <div class="cont-titulo scroll-element js-scroll fade-in-top">
                 <h2 class="tituloUno ">Quiero</br><span> Ayudar</span></br>
-                    <img src="/img/rallitaRosa.svg" class="rallita" alt="Rallita">
+                    <img src="/img/rallitaRosa.svg" class="rallita" alt="Rallita rosa">
                 </h2>
             </div>
         </div>
@@ -337,8 +342,7 @@
 
                 <div class="row scroll-container">
                     <div class="col-10 col-md-4 col-lg-3 my-4 scroll-element js-scroll fade-in-left">
-                        <img src="/img/especie.png" width="85%" class="mx-auto d-block imgAyudar"
-                            alt="icono especie">
+                        <img src="/img/especie.png" width="85%" class="mx-auto d-block imgAyudar" alt="icono especie">
                     </div>
                     <div class="col-12 col-md-8 col-lg-9 my-4 scroll-element js-scroll fade-in-right">
                         <h4 class="subProyectos mt-3">¡Las donaciones en especie son una forma valiosa de apoyar!</h4>
@@ -353,7 +357,7 @@
                         </p>
                     </div>
                     <div class="col-10 col-md-4 col-lg-3 my-4 scroll-element js-scroll fade-in-left">
-                        <img src="/img/dinero.png" width="85%" class="mx-auto d-block" alt="icono especie">
+                        <img src="/img/dinero.png" width="85%" class="mx-auto d-block" alt="icono dinero">
                     </div>
                     <div class="col-12 col-md-8 col-lg-9 my-4 scroll-element js-scroll fade-in-right">
                         <h4 class="subProyectos mt-3">¡Utilizamos los fondos de manera responsable y transparente!</h4>
@@ -368,7 +372,7 @@
                         </p>
                     </div>
                     <div class="col-10 col-md-4 col-lg-3 my-4 scroll-element js-scroll fade-in-left">
-                        <img src="/img/alianza.png" width="85%" class="mx-auto d-block" alt="icono especie">
+                        <img src="/img/alianza.png" width="85%" class="mx-auto d-block" alt="Icono Alianza">
                     </div>
                     <div class="col-12 col-md-8 col-lg-9 my-4 scroll-element js-scroll fade-in-right">
                         <h4 class="subProyectos mt-3">¡Tu empresa puede ser parte del cambio!</h4>
@@ -387,7 +391,7 @@
     <div class="">
         <img src="/img/footer.jpg" width="100%" class=" g-0" alt="ondas moradas">
     </div>
-    <footer class="row justify-content-center pie pb-4 scroll-container" id="contacto">
+    <footer class="row justify-content-center pie pb-5 scroll-container" id="contacto">
         <div class="">
             <h2 class="tituloFooter scroll-element js-scroll fade-in-top">
                 Súmate a ayudar
@@ -412,13 +416,12 @@
             </form>
         </div>
         <div class="col-11 mt-5">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center pb-5">
 
-                <div class="col-9 col-md-1 my-4">
-                    <img src="/img/logoBlanco.svg" width="70%" class="logoBlanco"
-                        alt="logo fundación MTQ blanco">
+                <div class="col-9 col-md-1 my-4 mt-4">
+                    <img src="/img/logoBlanco.svg" width="70%" class="logoBlanco" alt="logo fundación MTQ blanco">
                 </div>
-                <div class="col-9 col-md-3 mt-0">
+                <div class="col-9 col-md-3 mt-4">
                     <nav class="mt-0 ">
 
                         <a href="#somos" class="menuFooter">
@@ -440,36 +443,39 @@
                     </nav>
 
                 </div>
+
                 <div class="col-md-5 mt-4">
-                    <h5>Contacto</h5>
+                    <h5 class="mb-3">Contacto</h5>
                     <div class="row d-flex">
-                        <div class="col-3 col-lg-2">
+                        <div class="col-2 col-lg-2">
                             <img src="/img/casa.svg" class="m-0 p-0 float-end imgDireccion" alt="casa">
                         </div>
-                        <div class="col-9 col-lg-10">
+                        
+                        <div class="col-10 col-lg-10 mb-3">
                             <p>José María Heredia 2405</br>
                                 Lomas de Guevara</br>
                                 C.P. 44657</br>
                                 Guadalajara, Jalisco
                             </p>
                         </div>
-                        <div class="col-3 col-lg-2">
-                            <img src="/img/diadema.svg" width="40%" class="m-0 p-0 float-end" alt="casa">
+                        <div class="col-2 col-lg-2">
+                            <img src="/img/diadema.svg" width="40%" class="m-0 p-0 float-end imgDireccion" alt="diadema">
                         </div>
-                        <div class="col-9 col-lg-10">
-                            <P>33 3630 6028 ext. 6105</P>
+                        <div class="col-10 col-lg-10">
+                            <P>33 3630 6028 ext. 6105</P></br>
                         </div>
                     </div>
                 </div>
-                <div class="col-11 col-md-3  mt-4">
-                    <a href="#"><img src="/img/facebook.svg" width="10%" class="float-end mx-2"
-                            alt="ondas moradas"></a>
-                    <a href="#"><img src="/img/instagram.svg" width="10%" class="float-end mx-2"
-                            alt="ondas moradas"></a>
-                    <a href="#"><img src="/img/twitter.svg" width="10%" class="float-end mx-2"
-                            alt="ondas moradas"></a></br></br>
+
+                <div class="col-11 col-md-3  d-block mt-4">
+                    <div>
+                    <a href="https://www.facebook.com/profile.php?id=100070949806178" Target="_blank"><img src="/img/facebook.svg" width="10%" class="float-end mx-2"  alt="liga a Facebook"></a>
+                    <a href="#"><img src="/img/instagram.svg" width="10%" class="float-end mx-2"  alt="liga a Instagram"></a>
+                    <a href="#"><img src="/img/twitter.svg" width="10%" class="float-end mx-2" alt="Liga a Twitter"></a></br></br></div>
+                    <div class="pt-3">       
                     <p class="text-end">Fundación MTQ 2023</br>
                         Todos los derechos reservados</P>
+                    </div> 
                 </div>
             </div>
         </div>
