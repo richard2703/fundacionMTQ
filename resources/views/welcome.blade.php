@@ -103,7 +103,8 @@
                     <img src="/img/banner3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
@@ -323,6 +324,48 @@
                     </p>
                 </div>
             </div>
+
+            <div class="row justify-content-center ">
+                <div class="col-12">
+                    <h2 class="tituloDos pb-3 "></br><span>Proyecto Actual</span></br></h2>
+                </div>
+
+                <div class="col-lg-6 col-12 pb-4">
+                    <div class="m-0 p-0">
+                        <img src="/img/campaigns/refugioMit.png" style="width: 100%; display: block;" alt="mit">
+                        <img src="/img/campaigns/fundaciones.png" style="width: 100%; display: block;"
+                            alt="fundaciones">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 pb-4 text-center">
+                    <p class="ProyectoActual pb-2">
+                        Brinda comodidad y esperanza: ¡Dona un colchón y
+                        cambia vidas! Tu generosidad puede convertirse en un descanso reparador para mujeres que están
+                        reconstruyendo sus caminos.
+
+                    </p>
+                    <p class="ProyectoActual pb-2">
+                        Cada donación nos acerca a un sueño más dulce y a la oportunidad de un nuevo comienzo.
+                    </p>
+                    <p class="ProyectoActual pb-2">
+                        Únete a nosotros para crear un impacto real y tangible en estas vidas. ¡Dona hoy y ayuda a
+                        construir
+                        un futuro más cómodo y brillante para todas!
+                    </p>
+                    <p class="cuenta pt-5">
+                        Aportaciones Economicas:
+                    </p>
+
+                    <p class="cuenta pt-3">
+                        Cuenta: 0100 5888433</br>
+                        Clabe: 044320010058884331</br>
+                        Scotiabank
+                    </p>
+
+                </div>
+
+
+            </div>
         </div>
     </section>
     <div class="m-0 p-0">
@@ -342,7 +385,8 @@
 
                 <div class="row scroll-container">
                     <div class="col-10 col-md-4 col-lg-3 my-4 scroll-element js-scroll fade-in-left">
-                        <img src="/img/especie.png" width="85%" class="mx-auto d-block imgAyudar" alt="icono especie">
+                        <img src="/img/especie.png" width="85%" class="mx-auto d-block imgAyudar"
+                            alt="icono especie">
                     </div>
                     <div class="col-12 col-md-8 col-lg-9 my-4 scroll-element js-scroll fade-in-right">
                         <h4 class="subProyectos mt-3">¡Las donaciones en especie son una forma valiosa de apoyar!</h4>
@@ -388,6 +432,7 @@
 
         </div>
     </section>
+
     <div class="">
         <img src="/img/footer.jpg" width="100%" class=" g-0" alt="ondas moradas">
     </div>
@@ -419,7 +464,8 @@
             <div class="row justify-content-center pb-5">
 
                 <div class="col-9 col-md-1 my-4 mt-4">
-                    <img src="/img/logoBlanco.svg" width="70%" class="logoBlanco" alt="logo fundación MTQ blanco">
+                    <img src="/img/logoBlanco.svg" width="70%" class="logoBlanco"
+                        alt="logo fundación MTQ blanco">
                 </div>
                 <div class="col-9 col-md-3 mt-4">
                     <nav class="mt-0 ">
@@ -450,7 +496,7 @@
                         <div class="col-2 col-lg-2">
                             <img src="/img/casa.svg" class="m-0 p-0 float-end imgDireccion" alt="casa">
                         </div>
-                        
+
                         <div class="col-10 col-lg-10 mb-3">
                             <p>José María Heredia 2405</br>
                                 Lomas de Guevara</br>
@@ -459,7 +505,8 @@
                             </p>
                         </div>
                         <div class="col-2 col-lg-2">
-                            <img src="/img/diadema.svg" width="40%" class="m-0 p-0 float-end imgDireccion" alt="diadema">
+                            <img src="/img/diadema.svg" width="40%" class="m-0 p-0 float-end imgDireccion"
+                                alt="diadema">
                         </div>
                         <div class="col-10 col-lg-10">
                             <P>33 3630 6028 ext. 6105</P></br>
@@ -469,13 +516,18 @@
 
                 <div class="col-11 col-md-3  d-block mt-4">
                     <div>
-                    <a href="https://www.facebook.com/profile.php?id=100070949806178" Target="_blank"><img src="/img/facebook.svg" width="10%" class="float-end mx-2"  alt="liga a Facebook"></a>
-                    <a href="#"><img src="/img/instagram.svg" width="10%" class="float-end mx-2"  alt="liga a Instagram"></a>
-                    <a href="#"><img src="/img/twitter.svg" width="10%" class="float-end mx-2" alt="Liga a Twitter"></a></br></br></div>
-                    <div class="pt-3">       
-                    <p class="text-end">Fundación MTQ 2023</br>
-                        Todos los derechos reservados</P>
-                    </div> 
+                        <a href="https://www.facebook.com/profile.php?id=100070949806178" Target="_blank"><img
+                                src="/img/facebook.svg" width="10%" class="float-end mx-2"
+                                alt="liga a Facebook"></a>
+                        <a href="#"><img src="/img/instagram.svg" width="10%" class="float-end mx-2"
+                                alt="liga a Instagram"></a>
+                        <a href="#"><img src="/img/twitter.svg" width="10%" class="float-end mx-2"
+                                alt="Liga a Twitter"></a></br></br>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-end">Fundación MTQ 2023</br>
+                            Todos los derechos reservados</P>
+                    </div>
                 </div>
             </div>
         </div>
