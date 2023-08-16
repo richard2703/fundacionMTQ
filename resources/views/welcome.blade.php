@@ -332,9 +332,8 @@
 
                 <div class="col-lg-6 col-12 pb-4">
                     <div class="m-0 p-0">
-                        <img src="/img/campaigns/refugioMit.png" style="width: 100%; display: block;" alt="mit">
-                        <img src="/img/campaigns/fundaciones.png" style="width: 100%; display: block;"
-                            alt="fundaciones">
+                        <img src="/img/refugioMit.png" style="width: 100%; display: block;" alt="mit">
+                        <img src="/img/fundacioness.jpg" style="width: 100%; display: block;" alt="fundaciones">
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 pb-4 text-center">
