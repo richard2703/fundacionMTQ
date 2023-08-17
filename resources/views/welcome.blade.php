@@ -451,13 +451,13 @@
                 <div class="row mb-3">
                     <label for="inputPassword3" class="col-4 col-sm-2 col-form-label">Nombre</label>
                     <div class="col-8 col-sm-10">
-                        <input type="text" class="form-control" id="nombre" name="nombre">
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-4 col-sm-2 col-form-label">Email</label>
                     <div class="col-8 col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" name="correo">
+                        <input type="email" class="form-control" id="inputEmail3" name="correo" required>
                     </div>
                 </div>
 
