@@ -152,7 +152,7 @@
                     hemos dirigido nuestros esfuerzos hacia personas en estado de
                     vulnerabilidad, ya sea por su condición social, tipo de discapacidades,
                     nivel económico, estado de salud físico o psicológico o una combinación
-                    de éstos, con el propósito de mejorar su calidad de vida. </br></br>
+                    de estos, con el propósito de mejorar su calidad de vida. </br></br>
 
                     La base de nuestro trabajo reside en hacer el bien y en la dedicación
                     continua que aportamos a la variedad de causas en las que participamos.
@@ -205,7 +205,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title titleValores">Visión</h5>
                                         <p class="card-text">Ser la asociación civil líder en otorgar las soluciones
-                                            optimas e innovadoras acorde a las necesidades especificas de cada una de
+                                            óptimas e innovadoras, acorde a las necesidades específicas de cada una de
                                             las causas que nos comprometemos, sustentada por un modelo de procuración
                                             autosuficiente y transparente que asegure el futuro de nuestros proyectos.
                                             Con esto consolidarnos como la primera opción viable y confiable para
@@ -324,8 +324,12 @@
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="row justify-content-center proyectos" id="proyectosActual">
+        <div class="col-11  mb-5 scroll-container">
 
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center " id="">
                 <div class="col-12">
                     <h2 class="tituloDos pb-3 "></br><span>Proyecto Actual</span></br></h2>
                 </div>
@@ -352,7 +356,7 @@
                         un futuro más cómodo y brillante para todas!
                     </p>
                     <p class="cuenta pt-5">
-                        Aportaciones Economicas:
+                        Aportaciones Económicas:
                     </p>
 
                     <p class="cuenta pt-3">
@@ -442,17 +446,18 @@
             </h2>
         </div>
         <div class="col-10 col-md-6 mb-5 scroll-element js-scroll fade-in-top">
-            <form>
+            <form action="{{ route('afiliados.store') }}" method="post">
+                @csrf
                 <div class="row mb-3">
                     <label for="inputPassword3" class="col-4 col-sm-2 col-form-label">Nombre</label>
                     <div class="col-8 col-sm-10">
-                        <input type="text" class="form-control" id="inputPassword3">
+                        <input type="text" class="form-control" id="nombre" name="nombre">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-4 col-sm-2 col-form-label">Email</label>
                     <div class="col-8 col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3">
+                        <input type="email" class="form-control" id="inputEmail3" name="correo">
                     </div>
                 </div>
 
@@ -545,6 +550,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function Guardado() {
+            // alert('test');
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Gracias por Volverte un Afiliado',
+                showConfirmButton: false,
+                timer: 2500
+            })
+
+        }
+
+        var slug = '{{ Session::get('message') }}';
+        if (slug == 1) {
+            Guardado();
+
+        }
+    </script>
+
 
 
     <!--Script adicionales-->
@@ -631,6 +658,7 @@
             handleScrollAnimation();
         });
     </script>
+
 
 </body>
 

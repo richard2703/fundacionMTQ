@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('afiliados', [App\Http\Controllers\afiliadosController::class, 'store'])->name('afiliados.store');
+
+Route::group(['middleware' => 'auth'], function () {
+});
